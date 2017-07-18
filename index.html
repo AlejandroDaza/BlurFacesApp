@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head >
+        <meta charset="utf-8">        
+        <script type="text/javascript" src="script.js"></script>             
+        <script src="tracking-min.js"></script>
+        <script src="face-min.js"></script>        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        
+    </head>
+    
+    <body> 
+        <div class="page-header">
+            <h1> &nbsp;&nbsp; Example of blurring faces in photos   </h1>
+        </div>        
+        
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <table>
+                    <tr>
+                        <th> <input  type="file" onchange="previewFile()"> </th>
+                        <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        <th> <button onclick="blurFace()"> Analyze image</button></th>
+                    </tr>
+                </table>    
+            </div>
+            <div class="panel-body" align="center">
+                <img src="" id="img">                   
+            </div>
+            <div class="panel-body" align="center">                
+                <canvas id="theCanvas"></canvas>               
+            </div>
+        </div>
+</body>
+     <footer>
+        <p>&nbsp;&nbsp;  Posted by: Alejandro Daza</p>
+        <p>&nbsp;&nbsp;  @ July - 2017 </p>
+    </footer> 
+</html>
